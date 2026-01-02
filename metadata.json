@@ -1,0 +1,8 @@
+{
+  "name": "Copy of Mahabodhi Classes",
+  "description": "A comprehensive educational and online coaching application for Class 1-10, Matric, and Intermediate students, featuring secure video streaming, PDF materials, and AI-powered performance tracking.",
+  "requestFramePermissions": [
+    "camera",
+    "microphone"
+  ]
+}

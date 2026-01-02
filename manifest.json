@@ -1,0 +1,21 @@
+
+{
+  "name": "Mahabodhi Classes",
+  "short_name": "Mahabodhi",
+  "start_url": "/",
+  "display": "standalone",
+  "background_color": "#ffffff",
+  "theme_color": "#ea580c",
+  "icons": [
+    {
+      "src": "https://picsum.photos/seed/mahabodhi/192/192",
+      "sizes": "192x192",
+      "type": "image/png"
+    },
+    {
+      "src": "https://picsum.photos/seed/mahabodhi/512/512",
+      "sizes": "512x512",
+      "type": "image/png"
+    }
+  ]
+}
