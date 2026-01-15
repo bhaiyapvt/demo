@@ -8,6 +8,7 @@ import AdminDashboard from './views/AdminDashboard';
 import CourseContent from './views/CourseContent';
 import TestView from './views/TestView';
 import LoginView from './views/LoginView';
+import SpeedInsights from './components/SpeedInsights';
 
 const App: React.FC = () => {
   const [currentUser, setCurrentUser] = useState<User | null>(null);
@@ -53,10 +54,13 @@ const App: React.FC = () => {
 
   if (activeView === 'LOGIN') {
     return (
-      <LoginView 
-        onLogin={handleLogin} 
-        savedProfiles={savedProfiles}
-      />
+      <>
+        <SpeedInsights />
+        <LoginView 
+          onLogin={handleLogin} 
+          savedProfiles={savedProfiles}
+        />
+      </>
     );
   }
 
@@ -67,6 +71,7 @@ const App: React.FC = () => {
       onHome={() => setActiveView('HOME')}
       onSwitchAccount={handleSwitchUser}
     >
+      <SpeedInsights />
       {activeView === 'HOME' && currentUser?.role === UserRole.STUDENT && (
         <StudentDashboard 
           user={currentUser} 
